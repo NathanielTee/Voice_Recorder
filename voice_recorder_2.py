@@ -6,6 +6,12 @@ from datetime import datetime
 import time
 import keyboard
 
+if __name__ == "__main__":
+    print("=========================")
+    print("Author: [Nathaniel Tee]")
+    print("License: MIT License")
+    print("=========================")
+
 # Function to normalize the audio data
 def normalize_audio(audio_data):
     audio_data = audio_data / np.max(np.abs(audio_data))  # Normalize to max value 1.0
